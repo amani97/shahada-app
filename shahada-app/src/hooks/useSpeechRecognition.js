@@ -6,7 +6,7 @@ export const useSpeechRecognition = () => {
   
   useEffect(() => {
     const recognition = new window.webkitSpeechRecognition();
-    recognition.continuous = true;
+    recognition.continuous = false;
     recognition.interimResults = true;
 
     recognition.onresult = (event) => {

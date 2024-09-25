@@ -53,16 +53,16 @@
   width: 30%;
 }
 
-.NavItems a{
+.NavItems a {
   color: var(--text-color);
-font-weight: 700;
-font-size: 14px;
-text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
 }
 @media only screen and (max-width: 768px) {
-.NavItems{
-  display: none;
-}
+  .NavItems {
+    display: none;
+  }
 }
 
 .title {
@@ -90,4 +90,11 @@ text-decoration: none;
   border-radius: 0.5rem;
   width: 16rem;
   height: 3.1rem;
+}
+
+.soundIcon {
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin-left: 0.5rem;
+  border:none
 }

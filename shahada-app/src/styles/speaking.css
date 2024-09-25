@@ -1,0 +1,44 @@
+.audio-wave-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.audio-wave {
+  position: relative;
+  width: 240px;
+  height: 240px;
+  background: url("../assets/talking.svg") no-repeat center center;
+  background-size: contain;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.inner-wave {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120px;
+  height: 120px;
+  background: rgba(0, 0, 255, 0.2);
+  border-radius: 50%;
+  transform: translateY(-50%, -50%);
+  transition: transform 0.3s ease-out;
+  animation: wave-animation 2s infinite ease-in-out;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: translateY(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translateY(-50%, -50%) scale(1.1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateY(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+}

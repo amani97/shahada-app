@@ -16,7 +16,7 @@ body[data-theme='light'] {
 }
 
 body[data-theme='dark'] {
-  --background-color: #333;
+  --background-color: #000;
   --text-color: #fff;
 }
 .app {
@@ -26,4 +26,9 @@ body[data-theme='dark'] {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+h3{
+  font-size: 1.25rem;
+  font-weight: 500;
 }
